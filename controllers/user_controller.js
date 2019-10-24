@@ -45,9 +45,8 @@ const regist = async(ctx,next)=> {
             userName: userName,
             collectionGoods: [],
             phone: phone,
-            avatar: 'http://pzpn0fefv.bkt.clouddn.com/defult.jpg',
+            avatar: 'https://i.loli.net/2019/10/24/OA7xXHQLu51TgBk.jpg',
         })
-        console.log(newUser)
         if(newUser) {
             // 加密
             var hash = await passport.encrypt(password, config.saltTimes)

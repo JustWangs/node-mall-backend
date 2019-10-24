@@ -527,6 +527,11 @@ koa-session@^5.12.3:
     is-type-of "^1.0.0"
     uuid "^3.3.2"
 
+koa2-cors@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npm.taobao.org/koa2-cors/download/koa2-cors-2.0.6.tgz#9ad23df3a0b9bb84530b46f5944f3fb576086554"
+  integrity sha1-mtI986C5u4RTC0b1lE8/tXYIZVQ=
+
 koa@^2.9.0:
   version "2.10.0"
   resolved "https://registry.npm.taobao.org/koa/download/koa-2.10.0.tgz?cache=0&sync_timestamp=1571246550105&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fkoa%2Fdownload%2Fkoa-2.10.0.tgz#86a583ff280896dce3a36b0b6dae80f9559240d3"
