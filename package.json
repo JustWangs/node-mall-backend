@@ -1,0 +1,24 @@
+{
+  "name": "mall-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangshi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parse": "^0.1.0",
+    "ccap": "^0.6.10",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.9.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.3",
+    "mongoose": "^5.7.4",
+    "node-fetch": "^2.6.0",
+    "uuid": "^3.3.3"
+  }
+}
