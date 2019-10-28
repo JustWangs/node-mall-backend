@@ -9,6 +9,9 @@ module.exports = {
         time:Math.floor(Date.now() / 1000) + 24 * 60 * 60, // token过期时间 
         secret:'shopMall', // token加密文
     },
+    Bucket: 'wangshi-oss',   //七牛云bucket
+    AccessKey: '4AanNSZKCyT2Ixy3BFOW-GkGkMY3oN8nx1hb-C2Q',   //七牛云accessKey
+    SecretKey: 'frR6pdZjjt2y2-blIYWKkxqYNhbGF2PSmejRnFin',    //七牛云secretKey
     session:{
         key: 'sess',   //cookie key (default is koa:sess)
         maxAge: hour * 2,  // cookie的过期时间 maxAge in ms (default is 1 days)

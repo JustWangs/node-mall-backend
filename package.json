@@ -15,11 +15,13 @@
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.9.0",
     "koa-bodyparser": "^4.2.1",
+    "koa-multipart": "^0.0.1",
     "koa-router": "^7.4.0",
     "koa-session": "^5.12.3",
     "koa2-cors": "^2.0.6",
     "mongoose": "^5.7.4",
     "node-fetch": "^2.6.0",
+    "qiniu": "^7.2.2",
     "uuid": "^3.3.3"
   }
 }
