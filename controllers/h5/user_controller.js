@@ -1,9 +1,9 @@
-const user_Col = require('./../models/user')
-const psw_Col = require('./../models/password')
+const user_Col = require('../../models/h5/user')
+const psw_Col = require('../../models/h5/password')
 const ccap = require('ccap')()
-const passport = require('./../utils/passport');
+const passport = require('../../utils/passport');
 const uuid = require('uuid')
-const config = require('./../config')
+const config = require('../../config')
 const jwt = require('jsonwebtoken')
 
 /**
@@ -156,7 +156,7 @@ const login = async(ctx,next)=> {
 
             ctx.body = {
                 data: {
-                    token:token,
+                    Authorization:token,
                     collectionGoods:user.collectionGoods,
                     userId:user.userId,
                     userName:user.userName,
@@ -233,9 +233,6 @@ const changeUserAvatar = async(ctx,next)=> {
         }
     }
 }
-
-
-
 
 module.exports = {
     regist,

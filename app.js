@@ -32,8 +32,12 @@ app.keys = ['some secret hurr'];
 
 app.use(session(config.session, app));
 
-const user_router = require('./routers/api/user_router')
+// h5
+const user_router = require('./routers/api/h5/user_router')
+const address_router = require('./routers/api/h5/address_router')
 
+// h5
 app.use(user_router.routes()).use(user_router.allowedMethods())
+app.use(address_router.routes()).use(address_router.allowedMethods())
 
 app.listen(config.port)
