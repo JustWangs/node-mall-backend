@@ -22,10 +22,10 @@ module.exports = async(ctx,next)=> {
         verifyToken = await jwt.verify(reqToken, config.jwt.secret); // 验证
     }catch(err) {
         if ('TokenExpiredError' === err.name) {
-            ctx.status = 401
+            ctx.status = 403
             ctx.body = {
                 data: {
-                    code: 401,
+                    code: 403,
                     msg: '身份认证已经过期，请重新登录'
                 }
             }

@@ -9,5 +9,8 @@ router.post('/h5/login',user_controller.login)
 router.get('/h5/getCodeImage',user_controller.getCodeImg)
 router.get('/h5/uploadtoken',verify,Qiniu.uploadToken) 
 router.post('/h5/updateUserAvatar',verify,user_controller.changeUserAvatar)
+router.get('/h5/getBannerNotice',user_controller.getBannerNotice)
+router.post('/h5/addToCollection',verify,user_controller.addToCollection)
+router.post('/h5/delCollection',user_controller.delCollection)
 
 module.exports = router
