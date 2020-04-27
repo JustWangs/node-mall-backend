@@ -45,14 +45,14 @@ const regist = async(ctx,next)=> {
         var newUser = await user_Col.create({
             userId: userId,
             userName: userName,
-            collectionGoods: [],
             phone: phone,
-            avatar: 'https://i.loli.net/2019/10/24/OA7xXHQLu51TgBk.jpg',
+            collectionGoods: [],
+            avatar: 'https://i.loli.net/2019/10/24/OA7xXHQLu51TgBk.jpg', // 默认值
         })
         if(newUser) {
-            // 加密
+            // md5
             var hash = await passport.encrypt(password, config.saltTimes)
-            var result = psw_Col.create({
+            var result = await psw_Col.create({
                 password:hash,
                 userId:userId
             })
@@ -178,7 +178,6 @@ const login = async(ctx,next)=> {
                 code:401
            }
         }
-        
     } catch (error) {
         ctx.status = 500
         ctx.body = {
@@ -457,9 +456,6 @@ const delCollection = async (ctx,next)=> {
     }
 
 }
-
-
-
 
 module.exports = {
     regist,

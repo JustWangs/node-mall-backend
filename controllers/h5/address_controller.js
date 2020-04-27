@@ -31,6 +31,7 @@ const createAddress = async (ctx,next)=> {
             }
             return
         }
+        
         // 获取该用户的所有地址
         var userAddresses = await add_Col.find({userId:address.userId})
 
