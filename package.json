@@ -9,7 +9,7 @@
   "author": "wangshi",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parse": "^0.1.0",
     "ccap": "^0.6.10",
     "jsonwebtoken": "^8.5.1",
